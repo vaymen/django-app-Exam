@@ -68,3 +68,7 @@ docker run --rm --network demo -p 8000:8000 \
 - **gunicorn instead of `runserver`**, with `--worker-tmp-dir /dev/shm` so the root filesystem can be read-only.
 - **Welcome page served with `DEBUG=False`.** Health routes sit first in the middleware stack, so probes work with the pod IP as `Host` without touching `ALLOWED_HOSTS`.
 - **Possible, but unnecessary here:** WhiteNoise for static files, `pip-tools` with hashes for a fully locked dependency set, pinning the base image by digest.
+
+## How this was built
+
+Written with the help of an AI coding assistant (Claude Code) and reviewed and tested by hand. [`AGENTS.md`](AGENTS.md) records the conventions and commands an agent must follow when changing this repository.
