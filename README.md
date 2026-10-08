@@ -71,4 +71,4 @@ docker run --rm --network demo -p 8000:8000 \
 
 ## How this was built
 
-Written with the help of an AI coding assistant (Claude Code) and reviewed and tested by hand. [`AGENTS.md`](AGENTS.md) records the conventions and commands an agent must follow when changing this repository.
+Written with the help of an AI coding assistant (Claude Code) and reviewed by hand. The image was built, run against PostgreSQL and deployed on kind. [`AGENTS.md`](AGENTS.md) records the conventions and commands an agent must follow when changing this repository.
